@@ -11,7 +11,7 @@ class Epithet < Formula
   depends_on "go" => :build
 
   def install
-    system "make epithet"
+    system "make", "epithet"
     bin.install "epithet"
   end
 
