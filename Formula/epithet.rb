@@ -1,8 +1,8 @@
 class Epithet < Formula
   desc "SSH certificate management"
   homepage "https://epithet.dev/"
-  url "https://github.com/epithet-ssh/epithet/archive/refs/tags/v0.1.6.tar.gz"
-  sha256 "1be012d082f5f2ca2a7e3ac042dc52438e91a0bf0ffa92f3f52e22ca94b5085c"
+  url "https://github.com/epithet-ssh/epithet/archive/refs/tags/v0.1.7.tar.gz"
+  sha256 "01c8b0e29dfcf0795bcbff20cc67aba56e9e7050be0c2bd562dc2632457ddda5"
   license "Apache-2.0"
   head "https://github.com/epithet-ssh/epithet.git"
 
@@ -14,13 +14,15 @@ class Epithet < Formula
     (share/"epithet").install "examples/client/.epithet/config" => "config.example"
   end
 
-  def post_install
-    (Dir.home/".epithet").mkpath
-    (Pathname.new(Dir.home)/"Library/logs/dev.epithet").mkpath
+  def caveats
+    <<~EOS
+      To complete setup, run:
+        mkdir -p ~/.epithet ~/Library/logs/dev.epithet
+        cp #{opt_share}/epithet/config.example ~/.epithet/
 
-    config_example = share/"epithet/config.example"
-    target = Pathname.new(Dir.home)/".epithet/config.example"
-    cp config_example, target unless target.exist?
+      Then start the agent:
+        brew services start epithet
+    EOS
   end
 
   service do
