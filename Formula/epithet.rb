@@ -18,7 +18,7 @@ class Epithet < Formula
     <<~EOS
       To complete setup, run:
         mkdir -p ~/.epithet ~/Library/logs/dev.epithet
-        cp #{opt_share}/epithet/config.example ~/.epithet/
+        cp #{opt_share}/epithet/config.yaml ~/.epithet/config.yaml.example
 
       Then start the agent:
         brew services start epithet
