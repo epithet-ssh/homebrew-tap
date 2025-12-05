@@ -11,14 +11,14 @@ class Epithet < Formula
   def install
     system "make", "epithet"
     bin.install "epithet"
-    (share/"epithet").install "examples/client/.epithet/config" => "config.example"
+    (share/"epithet").install "examples/client/.epithet/config.yaml" => "config.yaml.example"
   end
 
   def caveats
     <<~EOS
       To complete setup, run:
         mkdir -p ~/.epithet ~/Library/logs/dev.epithet
-        cp #{opt_share}/epithet/config.yaml ~/.epithet/config.yaml.example
+        cp #{opt_share}/epithet/config.yaml.example ~/.epithet/config.yaml
 
       Then start the agent:
         brew services start epithet
