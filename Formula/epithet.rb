@@ -1,8 +1,8 @@
 class Epithet < Formula
   desc "SSH certificate management"
   homepage "https://epithet.dev/"
-  url "https://github.com/epithet-ssh/epithet/archive/refs/tags/v0.3.3.tar.gz"
-  sha256 "2b7597544cf9d724edd9221f7b31b97fea3bc930fe964db89281d1538d9ae724"
+  url "https://github.com/epithet-ssh/epithet/archive/refs/tags/v0.3.4.tar.gz"
+  sha256 "f32317fb1b477e21b311788bbeafda8aaed7321cdf684f9054616889ffca927b"
   license "Apache-2.0"
   head "https://github.com/epithet-ssh/epithet.git"
 
