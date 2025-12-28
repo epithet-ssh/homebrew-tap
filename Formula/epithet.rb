@@ -1,26 +1,26 @@
 class Epithet < Formula
   desc "SSH certificate management"
   homepage "https://epithet.dev/"
-  version "0.3.4"
+  version "0.3.5"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/epithet-ssh/epithet/releases/download/v0.3.4/epithet_0.3.4_darwin_arm64.tar.gz"
-      sha256 "fd0d72ac716024a3dacbfb18dc01b4f88c020cbeae16b06688b4fc0c408e8f9b"
+      url "https://github.com/epithet-ssh/epithet/releases/download/v0.3.5/epithet_0.3.5_darwin_arm64.tar.gz"
+      sha256 "164266a10b026f1f97d70938d187a6e4856383b3d20bc1b19b52b0deabd47ded"
     else
-      url "https://github.com/epithet-ssh/epithet/releases/download/v0.3.4/epithet_0.3.4_darwin_amd64.tar.gz"
-      sha256 "67eb4658ca8a7191c7606fc27cbf7cb2e48a1988d1e51877534959ca67debdce"
+      url "https://github.com/epithet-ssh/epithet/releases/download/v0.3.5/epithet_0.3.5_darwin_amd64.tar.gz"
+      sha256 "c2ef95d3319fd78e53d7cef67ce3d0350544be50943c937ec3679080414d7937"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/epithet-ssh/epithet/releases/download/v0.3.4/epithet_0.3.4_linux_arm64.tar.gz"
-      sha256 "f8781041c30c62b4522df1b8544499f19a7dd4dd21b0516ba8181d7e8868607e"
+      url "https://github.com/epithet-ssh/epithet/releases/download/v0.3.5/epithet_0.3.5_linux_arm64.tar.gz"
+      sha256 "2290055ca3788f23b00e9151d689379a145514bee6763f14a9810531ca25cf8a"
     else
-      url "https://github.com/epithet-ssh/epithet/releases/download/v0.3.4/epithet_0.3.4_linux_amd64.tar.gz"
-      sha256 "779ba31ec516ffe538dd501684d8fc0afa6df9390acafe1b8b4bf6562db2209f"
+      url "https://github.com/epithet-ssh/epithet/releases/download/v0.3.5/epithet_0.3.5_linux_amd64.tar.gz"
+      sha256 "65a76519615cc9ec8c00c17c11d9153cee38acb82b6f327e5d32683f8928061b"
     end
   end
 
