@@ -1,6 +1,6 @@
 cask "epithet-agent-mac" do
-  version "0.2.0"
-  sha256 "19b5f7b211982a7b1d14a23e956b85a9a4e0fba64f976c6dd8f6560a6fd237e0"
+  version "0.6.1"
+  sha256 "d7c53d26a657a56fcf4baf83acce6a771f33ecd7b96e92b07ce6b6b7f55ae643"
 
   url "https://github.com/epithet-ssh/epithet-macos/releases/download/v#{version}/EpithetAgent.dmg"
   name "Epithet Agent"
