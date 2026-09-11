@@ -5,21 +5,21 @@
 class Epithet < Formula
   desc "SSH certificate management"
   homepage "https://epithet.dev/"
-  version "0.29.0"
+  version "0.30.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/epithet-ssh/epithet/releases/download/v0.29.0/epithet_0.29.0_darwin_amd64.tar.gz"
-      sha256 "c3e6edfe824f1a41f027e4c5199b39e7ea68cef8c5be369fb86864fb87a37f66"
+      url "https://github.com/epithet-ssh/epithet/releases/download/v0.30.1/epithet_0.30.1_darwin_amd64.tar.gz"
+      sha256 "ed41d099bc4413d8872d90aab03d784acd3bc5c3f78d3c8f7f962815f26bdb82"
 
       define_method(:install) do
         bin.install "epithet"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/epithet-ssh/epithet/releases/download/v0.29.0/epithet_0.29.0_darwin_arm64.tar.gz"
-      sha256 "05ce1d3790306cb6d9cad9fdeb01b8a72ef937c99b75da25928c90bbbf6c96e2"
+      url "https://github.com/epithet-ssh/epithet/releases/download/v0.30.1/epithet_0.30.1_darwin_arm64.tar.gz"
+      sha256 "3c9065b92b42d749a28313e5294ba2cb309726dd313498297b85383c37da2a9e"
 
       define_method(:install) do
         bin.install "epithet"
@@ -29,15 +29,15 @@ class Epithet < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/epithet-ssh/epithet/releases/download/v0.29.0/epithet_0.29.0_linux_amd64.tar.gz"
-      sha256 "b40bbcc44ec763d7122003bffa7b0679bf08c8cee4817622869a926cfb874db7"
+      url "https://github.com/epithet-ssh/epithet/releases/download/v0.30.1/epithet_0.30.1_linux_amd64.tar.gz"
+      sha256 "395e8c469e6250281219126b47464d0b16df1468afc74d312bb10eacacea31fc"
       define_method(:install) do
         bin.install "epithet"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/epithet-ssh/epithet/releases/download/v0.29.0/epithet_0.29.0_linux_arm64.tar.gz"
-      sha256 "08c6a17d84d7735361bb89516f5c59ec91db9fba54323cf950bf3804ae734a41"
+      url "https://github.com/epithet-ssh/epithet/releases/download/v0.30.1/epithet_0.30.1_linux_arm64.tar.gz"
+      sha256 "ba2c3f12b1b78b5ac29ccf0317dfe3c23a850210c08b08cc9490af398b4db2a9"
       define_method(:install) do
         bin.install "epithet"
       end
