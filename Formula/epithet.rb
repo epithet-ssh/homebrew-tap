@@ -2,16 +2,16 @@
 class Epithet < Formula
   desc "SSH certificate management"
   homepage 'https://epithet.dev'
-  version '0.38.1'
+  version '0.39.0'
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://pkg.epithet.dev/macos/releases/v0.38.1/epithet_0.38.1_darwin_arm64.tar.gz'
-      sha256 '2e65526784c8804fe829c5e4a949e84eea810e7efe1b216542387fa66e8f4c8a'
+      url 'https://pkg.epithet.dev/macos/releases/v0.39.0/epithet_0.39.0_darwin_arm64.tar.gz'
+      sha256 '0b4a4b0961174f1c8d4c03111ce664f1d9165048f9754c71108a582b3e7d58e8'
     else
-      url 'https://pkg.epithet.dev/macos/releases/v0.38.1/epithet_0.38.1_darwin_amd64.tar.gz'
-      sha256 'cabd67650b09406d466a686b5bd79b76faa6a63fe9e4eac360cd28036a09bf92'
+      url 'https://pkg.epithet.dev/macos/releases/v0.39.0/epithet_0.39.0_darwin_amd64.tar.gz'
+      sha256 '259a5a66d10ce97ea2f0638930de35e7beeb5941dd145755633fd68cc48cfee6'
     end
   end
 
